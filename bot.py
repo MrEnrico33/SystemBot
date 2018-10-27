@@ -5,14 +5,18 @@ import asyncio
 import random
 import requests
 import os
+import asyncio
+from discord import Game
 
-client = commands.Bot(command_prefix="-")
-player_dict = dict()
+client = discord.Client()
 
 
 @client.event
-async def on_ready():
-    print("Bot ist bereit")
+@asyncio.coroutine
+def on_ready():
+
+    print ("Bot ist bereit")
+    yield from client.change_presence(game=Game(name="#Ghost4Ever"))
     
 
 
