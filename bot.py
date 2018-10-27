@@ -16,7 +16,7 @@ client = discord.Client()
 def on_ready():
 
     print ("Bot ist bereit")
-    yield from client.change_presence(game=Game(name="#Ghost4Ever" 'https://www.twitch.tv/mrenrico1'))
+    yield from client.change_presence(game=Game(name="#Ghost4Ever"))
     
 
 
