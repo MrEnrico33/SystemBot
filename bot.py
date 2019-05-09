@@ -16,7 +16,7 @@ client = discord.Client()
 def on_ready():
 
     print ("Bot ist bereit")
-    yield from client.change_presence(game=Game(name="#RevealedCommunity"))
+    yield from client.change_presence(game=Game(name="#RevealedRepublic"))
     
 
 
