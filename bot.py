@@ -22,3 +22,4 @@ def on_ready():
 
 
 client.run(str(os.environ.get('BOT_TOKEN')))
+
